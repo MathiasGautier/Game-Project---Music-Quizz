@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(0.25turn, #7F20D8, #2D1048);
+}
+
+.hidden{
+    display:none;
+}
+
+/* GAME SCREEN----------------------------------------------------------- */
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    letter-spacing: 1vh;
+}
+
+.choices button {
+    width: 90%;
+    height: 80%;
+    border:2px solid #E648C5;
+    justify-self: center;
+    border-radius: 30px;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(./ressource/fonts/ARCADECLASSIC.TTF);
+}
+
+@font-face {
+    font-family: disco;
+    src: url(./ressource/fonts/NeonDisco.ttf);
+}
+
+@font-face {
+    font-family: title;
+    src: url(./ressource/fonts/Games.ttf)
+}
+
+@font-face {
+    font-family: vinyle;
+    src: url(./ressource/fonts/AMVINYL-Heavy.ttf)
+}
+
+@font-face {
+    font-family:funky;
+    src: url(./ressource/fonts/pricedown\ bl.ttf)
+}
+
+.screen {
+    padding: 0;
+    background: linear-gradient(0.25turn, #7F20D8, #2D1048);
+    font-family: pixel;
+    font-size: 3vh;
+    letter-spacing: 3px;
+    color:  #23CABA;
+}
+
+#btn{
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+    padding-bottom: 5vh;
+}
+
+#btn h3{
+    align-self: center;
+}
+
+#btn p{
+    font-family: vinyle;
+    font-size: 9vh;
+    align-self: center;
+    color:#696969;
+}
+
+#vinyle1{
+    margin-left: 90%;
+}
+#vinyle2{
+    margin-right: 90%;
+}
+
+
+header {
+    height: 8vh;
+    font-family: pixel;
+    letter-spacing: 20px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4vh;
+    padding-bottom: 9vh;
+    padding-top:3vh
+}
+
+
+header h1 {
+    background: -webkit-linear-gradient(0.25turn, #F5A1E4 , #E648C5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 9vh;
+}
+
+
+main {
+    height: 75vh;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+main h1 {
+    font-family:funky;
+    letter-spacing: 5px;
+    font-size: 8vh;
+    background: -webkit-linear-gradient(0.25turn, #F5A1E4 , #E648C5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.game {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 0.5fr 0.5fr 1.5fr;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+/* #A{
+    grid-column: 1/-1;
+} */
+
+
+.right-zone {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding: 0;
+    border-left:2px solid black;
+    letter-spacing: 1;
+}
+
+.right-zone img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width:100vw;
+    height :100vh;
+    border:3px solid #E648C5 ;
+}
+
+.dialog {
+    padding-right:3vh;
+    padding-left:4vh;
+    text-align: justify;
+    align-self:center;   
+}
+ 
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: 4vh;
+    padding-top: 5px;
+}
+
+.life {
+    justify-self:center
+}
+
+.ennemy {
+    justify-self: center;
+}
+
+.lifeVinyl {
+    font-family: vinyle;
+    color: 	#FFD700;
+}
+
+h3 .good-answer {
+    color: rgb(255, 251, 0);
+    padding:10px;
+    border: 2px solid #E648C5;
+    border-radius: 25px;;
+}
+
+.choices button.good-answer{
+    background-color:green;
+}
+
+
+
+
+button.bad-answer{
+background-color: grey;
+}
+
+.playing{
+
+    animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #23CABA    }
+    49%{    color: #23CABA}
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #23CABA    }
+}
+
+.playing-yellow{
+
+    animation:blinkingText2 2s infinite;
+}
+@keyframes blinkingText2{
+    0%{     color: rgb(255, 251, 0)    }
+    49%{    color: rgb(255, 251, 0)}
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: rgb(255, 251, 0)   }
+}
+
+
+
+/* FIRST SCREEN ---------------------------------------------------------------------- */
+
+#intro p{
+    text-align: justify;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+#intro h4{
+    padding-top:100px;
+}
+
+#intro h3{
+padding-right:150px;
+padding-left:150px;
+}
+
+#vinyle-left{
+    margin-left: auto;
+}
+
+#start-the-game {
+    animation:blinkingText 2s infinite;
+}
+
+#gif{
+    height:30vh;
+}
+
+
+.border button {
+    transition: .5s ease;
+    }
+    
+    .border button:hover{
+    box-shadow: 0 0 0 10px #c0e646;
+    transition: .2s ease;
+    }
+
+ 

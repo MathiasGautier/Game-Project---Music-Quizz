@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <script type="module" src="script.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST 3</title>
+
+
+
+
+</head>
+
+<body>
+
+    <!-------------SONG RESSOURCES  ----------------------->
+    <audio id="audio0">
+        <source src="./ressource/songs/funk1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio1">
+        <source src="./ressource/songs/funk2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio2">
+        <source src="./ressource/songs/funk3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio3">
+        <source src="./ressource/songs/funk4.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio4">
+        <source src="./ressource/songs/funkbase.mp3" type="audio/mpeg">
+    </audio>
+    <!---------------------------------------------------------->
+    <audio id="general0">
+        <source src="./ressource/songs/general1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="general1">
+        <source src="./ressource/songs/general2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="general2">
+        <source src="./ressource/songs/general3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="general3">
+        <source src="./ressource/songs/general4.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="general4">
+        <source src="ressource/songs/generalbase.mp3" type="audio/mpeg">
+    </audio>
+    <!------------------------------------------------------------------------->
+    <audio id="rock0">
+        <source src="./ressource/songs/rockBase.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="rock1">
+        <source src="./ressource/songs/rock1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="rock2">
+        <source src="./ressource/songs/rock2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="rock3">
+        <source src="./ressource/songs/rock3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="rock4">
+        <source src="ressource/songs/rock4.mp3" type="audio/mpeg">
+    </audio>
+    <!--------------------------------------------------------------->
+    <audio id="boss0">
+        <source src="./ressource/songs/bossBase.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="boss1">
+        <source src="./ressource/songs/boss1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="boss2">
+        <source src="./ressource/songs/boss2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="boss3">
+        <source src="./ressource/songs/boss3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="boss4">
+        <source src="ressource/songs/boss4.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!------------------------------------------------->
+    <audio id="bad">
+        <source src="./ressource/songs/bad.wav" type="audio/wav">
+    </audio>
+    <audio id="good">
+        <source src="./ressource/songs/good.wav" type="audio/wav">
+    </audio>
+    <audio id="LETSGO">
+        <source src="./ressource/songs/LETSGO.wav" type="audio/wav">
+    </audio>
+
+    <audio id="lastSong">
+        <source src="./ressource/songs/lastsong.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+
+    <!--GAME SCREEN-------------------------------------------------->
+
+
+    <div class="screen hidden">
+        <header>
+            <h1>BLINDTEST INFERNO</h1>
+        </header>
+        <main>
+            <div class="game">
+                <div class="text">
+                    <h2></h2>
+                    <h1></h1>
+                </div>
+
+                <div id="btn">
+                    <p id="vinyle1">o</p>
+                    <div id="start-music">
+                        <h3 class="playing"></h3>
+                    </div>
+                    <p id="vinyle2">o</p>
+                </div>
+                <div id="question" class="border" style="visibility:hidden">
+                    <h3>MAKE YOUR CHOICE</h3>
+                </div>
+                <div class="choices border" style="visibility:hidden">
+                    <div id="A"></div>
+                    <div id="B"></div>
+                    <div id="C"></div>
+                    <div id="D"></div>
+                </div>
+            </div>
+            <div class="right-zone">
+                <div class="image">
+                    <img src="./ressource/images/disco.jpg" alt="discofunkmaster"> </div>
+                <div class="dialog">
+                    <p></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="life">
+            </div>
+            <div class="ennemy">
+            </div>
+        </footer>
+    </div>
+
+    <!-- FIRST SCREEN ------------------------------------------------->
+
+    <div class="screen" id="first-screen">
+
+        <header>
+            <h1>BLINDTEST INFERNO</h1>
+        </header>
+
+        <main>
+            <div class="game" id="intro">
+                <p>In the near future, music has become a disposable product. In this world, you are DJ Goodvibes, one
+                    of the last remaining music lovers, trying to protect and to teach this knowledge to the greatest
+                    number of people. For that, you can count on your loyal turntable and loud speakers. But a tragedy
+                    just hapenned... Your arch nemesis, Doctor Badmood, just stole your gear, trying to keep this
+                    allmighty knowledge for himself.</p>
+                <h4>-take back what's yours, restore the peace-</h4>
+                <h3>Defeat doctor badmood's minions and confront him in a music quizz in order to take back your gear !
+                </h3>
+                <div id="btn">
+                    <p id="vinyle-left">o</p>
+                    <button id="start-the-game">
+                        <h3> Click here to start the game</h3>
+                    </button>
+                    <p id="vinyle">o</p>
+                </div>
+            </div>
+            <div class="right-zone">
+                <div class="image">
+                    <img src="./ressource/images/bill.jpg" alt="DJ Goodvibe">
+                </div>
+                <div class="dialog">
+                    <p style="text-align: center;">DJ GOODVIBES</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="life">
+            </div>
+            <div class="ennemy">
+            </div>
+        </footer>
+    </div>
+
+    </div>
+</body>
+
+</html>
+
+<!--------------------------------------------------->
+
+<div class="screen hidden" id="last-screen">
+
+    <header>
+        <h1>BLINDTEST INFERNO</h1>
+    </header>
+
+    <main>
+        <div class="game" id="intro">
+            <p>You did it ! Thanks to you the world is at peace again. The evil forces of Dr Badmood are no more and the
+                balance have been restored. You can finally have your gear back and enjoy yourself with your beloved
+                music. </p>
+            <h2>-Congratulation-</h2>
+            <h3>You defeated the game and proved that you are worthy of your name.
+            </h3>
+            <div id="btn">
+                <p id="vinyle-left"></p>
+                <button id="start-the-game">
+                    <img src="./ressource/images/dj.gif" id="gif">
+                </button>
+
+            </div>
+        </div>
+        <div class="right-zone">
+            <div class="image">
+                <img src="./ressource/images/bill.jpg" alt="DJ Goodvibe">
+            </div>
+            <div class="dialog">
+                <p style="text-align: center;" class="playing">❤️ GOODVIBES FRVR ❤️️ </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="life">
+        </div>
+        <div class="ennemy">
+        </div>
+    </footer>
+</div>
+
+</div>
+</body>
+
+</html>
