@@ -33,6 +33,7 @@ function choiceSelected(e) {
 
     if (quizz[i].end === true) {
       dialog.innerText = quizz[i].death;
+      document.querySelector(".image").innerHTML = quizz[i].image;
       ennemyLife.innerHTML = `<p class="playing">ennemy x${0} <span style="font-family:vinyle; color:#FFD700">O</span></p>`;
       next.innerHTML =
         "<h3><button class='good-answer'> YOU DEFEATED DR BADMOOD ! CLICK HERE </button></h3>";
@@ -43,6 +44,7 @@ function choiceSelected(e) {
       `<p class="playing">ennemy x${1} <span style="font-family:vinyle; color:#FFD700">O</span></p>`
     ) {
       e.target.classList.add("good-answer");
+      document.querySelector(".image").innerHTML = quizz[i].image;
       dialog.innerText = quizz[i].death;
       ennemyLife.innerHTML = `<p class="playing">ennemy x${0} <span style="font-family:vinyle; color:#FFD700">O</span></p>`;
       next.innerHTML =
